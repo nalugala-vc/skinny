@@ -1,38 +1,571 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Inter:wght@300;700&family=Josefin+Sans&family=Just+Another+Hand&family=Lobster+Two&family=Metal+Mania&family=Pacifico&family=Poppins&family=Roboto+Condensed:ital,wght@0,300;0,700;1,400&family=Rubik+Marker+Hatch&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.skinmodels{
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.images{
   display: flex;
-  flex-direction: column;
+}
+.prof{
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+}
+.nav1,nav{
+  display: flex;
+  justify-content: space-between;
+}
+.nav1{
+  background-color: #b85953;
+  height: 25px;
+  padding: 10px;
+  color: antiquewhite;
+  font-size: 14px;
+  font-weight: 500;
+}
+.icons{
+  display: flex;
   align-items: center;
+}
+.info{
+  display: flex;
+  align-items: center;
+}
+.info>*{
+  margin-right: 8px;
+}
+.icons>*{
+  margin-left: 8px;
+}
+nav{
+  width: 100%;
+  padding-top: 10px;
+  height: 54px;
+  position: absolute;
+  background-color: antiquewhite;
+  opacity: 0.3;
+  display: flex;
+  align-items: center;
+}
+.srch{
+  display: flex;
+  align-items: center;
+}
+.logo{
+  font-family: 'Rubik Marker Hatch', cursive;
+  font-size: 25px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.b{
+  color:#fc038c ;
+}
+.links a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #b85953;
+}
+.links>*{
+  margin-right: 8px;
+}
+.links a:hover{
+  color: black;
+  font-size:20px ;
+}
+.srch>*{
+  margin-right: 8px;
+}
+.srch .fa-solid{
+  font-size: 20px;
+  font-weight: 700;
+  color: #b85953;
+
+}
+.app{
+  width: 100px;
+  height: 37px;
+  font-size: 16px;
+    font-weight: 550;
+    color: #b85953;
+    background-color: antiquewhite;
+    border: 1.5px solid #b85953;
+  
+}
+.srch .fa-solid:hover{
+  color: black;
+  font-size: 25px;
+}
+.app:hover{
+    color: #3f2d2c;
+    background-color:#b85953;
+    border: 1px solid #3f2d2c;
+}
+.ins-img{
+  position: absolute;
+  top: 180px;
+  width: 100%;
+}
+.def,.para,.buttons{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+#para{
+  width: 500px;
+  text-align: center;
+  align-items: center;
+}
+.hr{
+  display: flex;
+  justify-content: center;
+  height: 5px;
+  background-color: antiquewhite;
+  width: 200px;
+}
+#def{
+  font-size: 50px;
+  font-weight: 300;
+  color: antiquewhite;
+}
+hr {
+  background-color: antiquewhite;
+
+}
+#para p{
+  font-size: 18px;
+    
+    font-family: poppins;
+    color: rgb(250, 245, 247);
+}
+.buttons>*{
+  height: 40px;
+  width: 120px;
+  border: 1px solid antiquewhite;
+  color: antiquewhite;
+  margin: 5px;
+}
+#b1{
+  background-color: #b85953;
+}
+#b2{
+  background-color: transparent;
+}
+.maindiv,.maindiv2{
+  display: flex;
+}
+.pic{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: bottom;
+}
+.descc{
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
+.cards{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.desc{
+  margin: 20%;
+}
+#rm,.ptitle,.lorem{
+  display: flex;
+  justify-content: center;
+}
+.rm{
+  height: 30px;
+  width: 100px;
+  background-color: transparent;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid ;
+}
+.lorem{
+  text-align: center;
+  font-family: poppins;
+}
+.desc>*{
+  margin: 5%;
+}
+.maindiv:nth-child(1){
+  background-color:#b85953;
+  color: antiquewhite;
+}
+.maindiv:nth-child(1) hr{
+  background-color: #b85953;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.rm:nth-child(odd){
+  color: #a73c2b;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+/*#f2e5e4*/
+.maindiv:nth-child(2) {
+  background-color: #f2e5e4;
+  color: #b85953;
+}
+.maindiv2:nth-child(1) {
+  background-color: #f2e5e4;
+  color: #b85953;
+}
+.maindiv2:nth-child(2) {
+  background-color:#f7a88d;
+  color: antiquewhite;
+}
+.maintreat{
+  display: flex;
+  border: 1px #bfbdbf solid;
+  width: 300px;
+  height: 150px;
+  align-items: center;
+}
+.maintreat>*{
+  margin: 2%;
+}
+.icon{
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+#choose{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+#ch{
+  font-size: 40px;
+  font-weight: 500;
+  color:#ad4637;
+  font-family: poppins;
+}
+#hr{
+  background-color: #ad4637;
+  height: 1px;
+}
+.cards,#choose,.choose{
+  background-color: #fbedff;
+}
+#titlee{
+  color: #ad4637;
+}
+#content{
+  font-family: poppins;
+  font-size: 14px;
+}
+.revicon{
+  height: 150px;
+  width: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+.myrev{
+  display: flex;
+  overflow: scroll;
+}
+.myrev::-webkit-scrollbar{
+  display: none;
+}
+.revdiv:nth-child(odd){
+  background-color:#d18888;
+  color: antiquewhite;
+  
+}
+.revdiv{
+  height: 300px;
+  font-family: poppins;
+  
+}
+.revdiv:nth-child(even) {
+  background-color:antiquewhite;
+  color: #d18888;
+}
+#revdiv{
+  padding: 20px;
+}
+.footer{
+  padding-top: 10px;
+  background-color: #fbedff;
+}
+footer{
+  padding: 10px;
+  display: flex;
+  margin-top:50px ;
+  justify-content: center;
+  align-items: center;
+  color: antiquewhite;
+  background-color: #ad4637;
+}
+@media screen and (max-width:600px) {
+  .skinmodels {
+      height: 300px;
+    }
+    nav {
+      width: 100%;
+      padding-top: 6px;
+      height: 44px;
+    }
+  .nav1 {
+    height: 20px;
+      font-size: 12px;
+    }
+    .logo {
+      font-family: 'Rubik Marker Hatch', cursive;
+      font-size: 20px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    .links a {
+      text-decoration: none;
+      font-size: 12px;
+    }
+    .srch .fa-solid {
+      font-size: 14px;
+    }
+    .app {
+      width: 70px;
+      height: 25px;
+      font-size: 10px;
+    }
+    .prof {
+      height: 20px;
+      width: 20px;
+      border-radius: 100%;
+    }
+    .ins-img {
+      position: absolute;
+      top: 30%;
+      width: 100%;
+    }
+    #para {
+      width: 300px;
+    }
+    #def {
+      font-size: 30px;
+    }
+    #para p {
+      font-size: 12px;
+    }
+    
+    .buttons>* {
+      height: 30px;
+      width: 100px;
+      font-size: 10px;
+      border: 1px solid antiquewhite;
+      color: antiquewhite;
+      margin: 5px;
+    }
+    .pic,.descc { 
+      width: 120px;
+      height: 120px;
+    }
+    .rm {
+      height: 20px;
+      width: 60px;
+      font-size: 10px;
+    }
+    .desc {
+      margin: 15%;
+    }
+    .desc>* {
+      margin: 5%;
+    }
+    #desc{
+      font-size: 12px;
+    }
+    .lorem {
+      font-family: poppins;
+      font-size: 9px;
+    }
+        .icon {
+          width: 50px;
+          height: 50px;
+          border-radius: 100%;
+        }
+      #ch {
+        font-size: 20px;
+      }
+      .maintreat {
+        width: 200px;
+        height: 100px;
+      }
+    #titlee {
+      color: #ad4637;
+      font-size: 14px;
+    }
+  
+    #content {
+      font-family: poppins;
+      font-size: 10px;
+    }
+    .revicon {
+      height: 100px;
+      width: 120px;
+    }
+  
+    .revdiv:nth-child(odd) {
+      background-color: #d18888;
+      color: antiquewhite;
+  
+    }
+  
+    .revdiv {
+      height: 200px;
+      font-family: poppins;
+      font-size: 10px;
+    }
+    #revdiv {
+      padding: 10px;
+    }
+}
+.choose{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width:500px) {
+  .skinmodels {
+      height: 250px;
+      width: 100%;
+  
+    }
+    nav {
+      width: 100%;
+      padding-top: 6px;
+      height: 34px;
+    }
+  
+    .nav1 {
+      height: 16px;
+      font-size: 10px;
+    }
+    .logo {
+      font-family: 'Rubik Marker Hatch', cursive;
+      font-size: 16px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  
+    .links a {
+      text-decoration: none;
+      font-size: 10px;
+    }
+  
+    .srch .fa-solid {
+      font-size: 14px;
+    }
+  
+    .app {
+      width: 70px;
+      height: 25px;
+      font-size: 10px;
+    }
+    .ins-img {
+      position: absolute;
+      top: 13%;
+      width: 100%;
+    }
+    .prof {
+      height: 20px;
+      width: 20px;}
+        #def {
+          font-size: 25px;
+        }
+    
+        #para p {
+          font-size: 9px;
+        }
+    
+        .buttons>* {
+          height: 30px;
+          width: 70px;
+          font-size: 9px;
+          border: 1px solid antiquewhite;
+          color: antiquewhite;
+          margin: 5px;
+        }
+      .pic,.descc {
+        height: 100px;
+        width: 100px;
+      }
+    .rm {
+      height: 10px;
+      width: 30px;
+      font-size: 6px;
+    }
+  
+    .desc {
+      margin: 15%;
+    }
+  
+    .desc>* {
+      margin: 5%;
+    }
+  
+    #desc {
+      font-size: 10px;
+    }
+  
+    .lorem {
+      font-family: poppins;
+      font-size: 6px;
+    }
+        #titlee {
+          color: #ad4637;
+          font-size: 12px;
+        }
+    
+        #content {
+          font-family: poppins;
+          font-size: 8px;
+        }
+        .icon {
+          width: 40px;
+          height: 40px;
+          border-radius: 100%;
+        }
+
+}
+@media screen and (max-width:400px){
+  .logo {
+      font-family: 'Rubik Marker Hatch', cursive;
+      font-size: 12px;
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+        .nav1 {
+          height: 16px;
+          font-size: 9px;
+        }
+    .links a {
+      text-decoration: none;
+      font-size: 9px;
+    }
+        .srch .fa-solid {
+          font-size: 11px;
+        }
+    
+        .app {
+          width: 60px;
+          height: 22px;
+          font-size: 9px;
+        }
+    .pic,.descc {
+      height: 90px;
+      width: 90px;
+    }
+
 }
